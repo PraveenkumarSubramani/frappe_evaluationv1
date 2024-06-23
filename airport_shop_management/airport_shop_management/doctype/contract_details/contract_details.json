@@ -10,11 +10,13 @@
   "column_break_y76c",
   "rent_amount",
   "date_of_expiry",
+  "rental_date",
   "proofs_section",
+  "proof",
+  "section_break_hkev",
   "contractor_sinature",
   "column_break_eftd",
   "tenant_signature",
-  "proof",
   "amended_from"
  ],
  "fields": [
@@ -86,12 +88,22 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "rental_date",
+   "fieldtype": "Date",
+   "label": "Rental Due Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_hkev",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-06-22 12:22:08.189751",
+ "modified": "2024-06-22 13:24:47.548233",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Contract Details",

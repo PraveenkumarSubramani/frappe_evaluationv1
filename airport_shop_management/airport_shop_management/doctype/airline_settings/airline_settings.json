@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{AS}-{#}",
+ "creation": "2024-06-22 13:00:52.236863",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_schv",
+  "default_rent_amount",
+  "month_due_date",
+  "column_break_ih2o",
+  "rent__reminder"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_rent_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Default Rent Amount",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "rent__reminder",
+   "fieldtype": "Check",
+   "label": "Rent  Reminder"
+  },
+  {
+   "fieldname": "section_break_schv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ih2o",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month_due_date",
+   "fieldtype": "Int",
+   "label": "Day of every month Due date(like 5 th day of the month)",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-22 17:32:36.821821",
+ "modified_by": "Administrator",
+ "module": "Airport Shop Management",
+ "name": "Airline Settings",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

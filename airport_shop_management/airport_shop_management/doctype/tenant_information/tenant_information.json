@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:mobile_number",
+ "autoname": "field:email_id",
  "creation": "2024-06-21 15:38:06.803073",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -25,7 +25,9 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Email ID",
-   "options": "Email"
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "mobile_number",
@@ -40,7 +42,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-22 12:22:08.409595",
+ "modified": "2024-06-22 13:07:39.655314",
  "modified_by": "Administrator",
  "module": "Airport Shop Management",
  "name": "Tenant Information",
