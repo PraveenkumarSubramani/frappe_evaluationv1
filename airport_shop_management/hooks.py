@@ -132,7 +132,6 @@ app_license = "mit"
 
 # Scheduled Tasks
 # ---------------
-
 scheduler_events = {
     # "monthly": [
     #     "airport_shop_management.tasks.monthly"
@@ -141,10 +140,10 @@ scheduler_events = {
         "0 0 1 * *": [
             "airport_shop_management.airport_shop_management.doctype.cron.cron.send_payment_due_email"
         ]
-    }
-	# "monthly": [
-	# 	"airport_shop_management.tasks.monthly"
-	# ],
+    },
+	"hourly": [
+		"airport_shop_management.airport_shop_management.doctype.contract_details.contract_details.status_updation"
+	],
 }
 
 # Testing

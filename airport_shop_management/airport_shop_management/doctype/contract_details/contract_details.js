@@ -11,7 +11,13 @@ frappe.ui.form.on("Contract Details", {
             frm.set_df_property('rent_amount', 'read_only', 1);
             frm.refresh_field('rent_amount')
         }
-        
+        frm.set_query('shop', function() {
+            return {
+                filters: {
+                    status: 'Available'
+                }
+            };
+        });
        
 	},
 });
